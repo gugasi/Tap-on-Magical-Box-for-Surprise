@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tap on Magical Box for Surprise</title>
+    <link rel="icon" type="image/png" href="magic-box.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="draw()">
+    <div class="container">
+      <canvas id="nightSky"></canvas>
+      <div id="starsSmall"></div>
+      <div id="fallingStar"></div>
+
+      <div class="box">
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="cat">
+          <div class="face">
+            <div class="lower"></div>
+            <div class="left-ear"></div>
+            <div class="right-ear"></div>
+            <div class="left-eye"><div class="eye"></div></div>
+            <div class="right-eye"><div class="eye"></div></div>
+            <div class="nose"></div>
+          </div>
+          <div class="hat">
+            <div class="deco">
+              <div class="d1"></div>
+              <div class="d2"></div>
+              <div class="d3"></div>
+              <div class="d4"></div>
+            </div>
+          </div>
+          <div class="speech-bubble cat-bubble">for you meowgical hooman</div>
+          <div class="hands">
+            <div class="hand-left"></div>
+            <div class="hand-right"></div>
+          </div>
+          <div class="bouquet">
+            <div class="peony">
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+            </div>
+            <div class="peony">
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+            </div>
+            <div class="peony">
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+            </div>
+          </div>
+        </div>
+        <div class="dog">
+          <div class="face">
+            <div class="lower"></div>
+            <div class="left-ear"></div>
+            <div class="right-ear"></div>
+            <div class="left-eye"><div class="eye"></div></div>
+            <div class="right-eye"><div class="eye"></div></div>
+            <div class="nose"></div>
+          </div>
+          <div class="knight-helmet">
+            <div class="visor"></div>
+            <div class="plume"></div>
+          </div>
+          <div class="speech-bubble dog-bubble">
+            You look pawsitively radiant hooman
+          </div>
+          <div class="dog-paw"></div>
+          <div class="rose">
+            <div class="stem"></div>
+            <div class="flower"></div>
+          </div>
+        </div>
+      </div>
+      <div class="shadow"></div>
+    </div>
+
+    <script src="sky.js"></script>
+    <script>
+      const box = document.querySelector(".box");
+      box.addEventListener("click", () => {
+        box.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
